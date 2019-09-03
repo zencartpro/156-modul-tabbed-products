@@ -32,7 +32,7 @@ if (empty($_SESSION['admin_id'])) {
             array('TPP_GLOBAL_CUSTOM1_ON_TAB','0',1121,array('0','1')),
             array('TPP_GLOBAL_CUSTOM2_ON_TAB','0',1131,array('0','1')),
             array('TPP_GLOBAL_CUSTOM3_ON_TAB','0',1141,array('0','1')),
-            array('TPP_SHOW_TAB_HEADERS','1',1151,array('0','1'))
+            array('TPP_SHOW_TAB_HEADERS','0',1151,array('0','1'))
             );
 
     // Legacy Configuration Values to Delete Completely

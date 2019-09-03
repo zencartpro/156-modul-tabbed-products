@@ -1,15 +1,15 @@
 <?php
 /**
  * Page Template
- *
+ * Zen Cart German Specific
  * Loaded automatically by index.php?main_page=product_free_shipping_info.<br />
  * Displays details of a "free-shipping" product (provided it is assigned to the product-free-shipping product type)
  *
  * @package templateSystem
  * @copyright Copyright 2003-2019 Zen Cart Development Team
  * @copyright Portions Copyright 2003 osCommerce
- * @license http://www.zen-cart-pro.at/license/2_0.txt GNU Public License V2.0
- * @version $Id: tpl_product_free_shipping_info_display.php for Tabbed Products Pro 2019-07-10 17:33:58Z webchills $
+ * @license https://www.zen-cart-pro.at/license/3_0.txt GNU General Public License V3.0
+ * @version $Id: tpl_product_free_shipping_info_display.php for Tabbed Products Pro 2019-09-03 21:33:58Z webchills $
  */
 ?>
 
@@ -240,7 +240,9 @@ echo '<div id="tpptabBlock" style="display:none;">' . $tabData . '</div>';
   }
 ?>
 <!--eof Product URL -->
-
+<!--bof cross sell module-->
+<?php require($template->get_template_dir('tpl_modules_xsell_products.php', DIR_WS_TEMPLATE, $current_page_base,'templates'). '/' . 'tpl_modules_xsell_products.php'); ?> 
+<!--eof cross sell module-->
 <!--bof also purchased products module-->
 <?php require($template->get_template_dir('tpl_modules_also_purchased_products.php', DIR_WS_TEMPLATE, $current_page_base,'templates'). '/' . 'tpl_modules_also_purchased_products.php');?>
 <!--eof also purchased products module-->
