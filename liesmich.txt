@@ -9,6 +9,7 @@ https://www.zen-cart.com/downloads.php?do=file&id=646
 - Unterstützung des CSS/JS Loaders (Minify)
 - Konfiguration auf deutsch
 - Bugfix für Anzeige des Artikelbildes im Bewertungstab beim Template responsive_classic
+- Bugfix für Anzeige des Warenkorb Buttons im Bewertungstab
 - Anpassungen für 1.5.6 und PHP 7.3
 
 
