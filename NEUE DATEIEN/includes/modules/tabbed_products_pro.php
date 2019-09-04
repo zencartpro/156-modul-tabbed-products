@@ -9,7 +9,7 @@
  * @package modules
  * @copyright Copyright 2003-2019 Zen Cart Development Team
  * @license https://www.zen-cart-pro.at/license/3_0.txt GNU General Public License V3.0
- * @version $Id: tabbed_products_pro.php 2019-09-03 21:04:04Z webchills $
+ * @version $Id: tabbed_products_pro.php 2019-09-04 08:44:04Z webchills $
  *
  */
 
@@ -23,7 +23,7 @@ if ($proddata != "") {
 		$bGblProdDescTab =              TPP_GLOBAL_PROD_DESC_ON_TAB;  // Forces the Product Description to globally be in a tab
 		$bGblAddToCart =                TPP_GLOBAL_ADD_TO_CART_ON_TAB;  // adds Add to Cart and Qty Discount to its own tab
 		$bGblAttribsOnTab =             TPP_GLOBAL_ATTRIBUTES_ON_TAB;  // adds Attribute Options to its own a tab
-        $bGblAttribsOnATCTab =          TPP_GLOBAL_ATTRIBUTES_ON_ATC_TAB;  // adds Attribute Options to the Add-To-Cart tab. Overrides the standalone tab.
+    $bGblAttribsOnATCTab =          TPP_GLOBAL_ATTRIBUTES_ON_ATC_TAB;  // adds Attribute Options to the Add-To-Cart tab. Overrides the standalone tab.
 		$bGblDetailsOnTab =             TPP_GLOBAL_DETAILS_ON_TAB;  // adds Attribute Options to its own a tab
 		$bGblAdditionalImages =         TPP_GLOBAL_ADDL_IMAGES_ON_TAB;  // adds Additional Images on its own tab
 		$bGblCustomersAlsoPurchased =   TPP_GLOBAL_CUST_ALSO_PURCH_ON_TAB;  // adds Customers Also Purchased as its own tab
@@ -423,7 +423,7 @@ if ($proddata != "") {
                 $fmtRVW = str_replace('id="productReviewsDefaultProductImage"', 'id="productReviewsDefaultProductImageHide" style="display:none;"', $fmtRVW);
     			$fmtRVW = str_replace('class="forward"', 'class="forward" style="display:none;"', $fmtRVW);
     			$fmtRVW = str_replace('class="buttonRow"', 'class="buttonRow" style="display:none;"', $fmtRVW);
-    			//$fmtRVW = str_replace('class="buttonRow forward"', 'class="buttonRow forward" style="display:none;"', $fmtRVW);
+    			$fmtRVW = str_replace('id="reviews-cartadd"', 'id="reviews-cartadd" style="display:none;"', $fmtRVW);
                 // don't hide read reviews button causes write reviews to float drop off tab. To fix, adding float to .tabcontent and width 100%. Lets see how it works.
     			$fmtRVW = str_replace('id="productReviewsDefaultHeading"', 'id="productReviewsDefaultHeading" style="display:none;"', $fmtRVW);
     			$fmtRVW = str_replace('id="productReviewsDefaultPrice"', 'id="productReviewsDefaultPrice" style="display:none;"', $fmtRVW);
